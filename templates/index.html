@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WI主页</title>
+    <style>
+        div {
+            outline-style: dotted;
+            outline-width: 1px;
+            outline-color: lightskyblue;
+            text-align: center;
+        }
+        .wi-header {
+            // height: 50px;
+            padding: 0 10%;
+            background: dodgerblue;
+            text-align: right;
+        }
+        .wi-container {
+            display: flex;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .wi-content {
+            background: lightcoral;
+            flex-grow: 3;
+        }
+        .wi-detail {
+            background: lightyellow;
+            flex-grow: 1;
+        }
+        .wi-footer {
+            background: lightseagreen;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .float-container {
+            background: lightpink;
+            // padding: 20px;
+        }
+        .float-left {
+            float: left;
+        }
+        .float-right {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="wi-page">
+        <div class="wi-header">
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+        </div>
+
+        <div class="wi-container">
+            <div class="wi-content">
+                <h1>Welcome!</h1>
+                <!--<img src="/static?file=doge.gif"/>-->
+                <!--<img src="/static?file=doge2.gif"/>-->
+                <a href="/static">一个静态页面</a>
+                <br>
+                <a href="/v2ex">伪v2ex</a>
+                <br>
+            </div>
+            <div class="wi-detail">
+                WI
+            </div>
+        </div>
+
+        <div class="float-container clearfix">
+            <div class="float-left">
+                float-左
+            </div>
+            <div class="float-right">
+                float-右
+            </div>
+        </div>
+
+        <div class="wi-footer">
+            Copyright © 2016
+        </div>
+    </div>
+
+
+</body>
+</html>
